@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar li:last-child {
+    margin-left: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.container {
+  margin-top: 50px;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.relative {
+  position: relative;
+  left: 15px;
+}
+
+.absolute {
+  position: absolute;
+  left: 15px;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="parent"></div>
+      <div class="child"></div>
+  </div>
+</body>
+</html>
